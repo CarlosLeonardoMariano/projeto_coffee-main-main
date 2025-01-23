@@ -1,0 +1,442 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    
+}
+
+/* Header Section */
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+
+}
+
+.chamada{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: #fff;
+    z-index: 3;
+    text-align: left;
+}
+
+.chamada h1{
+    font-size: 3rem; /* Título grande e chamativo */
+    margin-bottom: 1rem;
+}
+
+.chamada p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.chamada .btn {
+    display: inline-block;
+    background-color: #c49a6c; 
+    color: #fff;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 25px;
+    transition: background-color 100ms ease-in;
+}
+
+.chamada .btn:hover {
+    background-color: #6d4e0d;
+}
+
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.icon-menu {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.icon-menu img {
+    width: 60px;
+    height: 40px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.menu ul li a:hover {
+    color: #f8b400;
+}
+
+/* Video Section */
+.video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#video_header {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+/* Overlay for better contrast */
+.video::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+
+.container{
+    width: 100%;
+    height: 90vh;
+    margin-top: 40px;
+    display: flex;
+}
+
+.container1{
+    width: 100%;
+    height: 90vh;
+    margin-top: 40px;
+    display: flex;
+}
+
+
+/* Imagens */
+.box {
+    width: 50%;
+    position: relative;
+    overflow: hidden; /* Esconde partes fora do contêiner */
+}
+
+
+.box1 {
+    width: 50%;
+    position: relative;
+    overflow: hidden; /* Esconde partes fora do contêiner */
+}
+
+
+
+
+
+.imagens img{
+    width: 100%; /* Ajusta a largura da imagem ao contêiner */
+    height: 100vh; /* Ajusta a altura da imagem ao contêiner */
+    object-fit: cover;
+    display: none; /* Oculta as imagens inicialmente */
+}
+
+.imagens img:first-child {
+    display: block; /* Mostra a primeira imagem */
+}
+
+.imagens1 img{
+    width: 100%; /* Ajusta a largura da imagem ao contêiner */
+    height: 100vh; /* Ajusta a altura da imagem ao contêiner */
+    object-fit: cover;
+    display: none; /* Oculta as imagens inicialmente */
+}
+
+.imagens1 img:first-child {
+    display: block; /* Mostra a primeira imagem */
+}
+
+
+
+.texto{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: #261c1c; /* Fundo claro para contraste */
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.texto h1 {
+    font-size: 2.5rem; /* Tamanho de fonte claro e proporcional */
+    margin-bottom: 1.25rem; /* Espaçamento inferior mais intuitivo */
+    position: relative; /* Mais seguro que absolute se não precisar de um deslocamento fixo */
+    top: -15%; /* Removido para evitar problemas de deslocamento */
+    text-align: center; /* Centraliza o texto no contêiner pai, se necessário */
+}
+
+
+.texto p {
+    font-size: 1rem;
+    line-height: 1.8;
+    position: relative;
+    bottom: 1%;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+
+.texto1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: #261c1c; /* Fundo claro para contraste */
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.texto1 h1 {
+    font-size: 2.5rem; /* Tamanho de fonte claro e proporcional */
+    margin-bottom: 1.25rem; /* Espaçamento inferior mais intuitivo */
+    position: relative; /* Mais seguro que absolute se não precisar de um deslocamento fixo */
+    top: -15%; /* Removido para evitar problemas de deslocamento */
+    text-align: center; /* Centraliza o texto no contêiner pai, se necessário */
+}
+
+
+.texto1 p {
+    font-size: 1rem;
+    line-height: 1.8;
+    position: relative;
+    bottom: 1%;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+
+
+.buttonlocalização{
+    background-color: #c49a6c; 
+    color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 30px;
+    text-align: center;
+    margin-left: 12rem;
+    position: relative;
+    top: 10%;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 300;
+    transition: background-color 100ms ease-in;
+}
+
+.buttonlocalização:hover{
+    background-color: #a87d50;
+}
+
+
+
+.radio-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.radio-controls input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    appearance: none;
+    background-color: #ccc;
+    border-radius: 50%;
+    border: 2px solid #333;
+}
+
+.radio-controls input[type="radio"]:checked {
+    background-color: #333;
+}
+
+.radio-controls1 {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+    gap: 20px;
+
+}
+
+.radio-controls1 input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    appearance: none;
+    background-color: #ccc;
+    border-radius: 50%;
+    border: 2px solid #333;
+}
+
+
+.radio-controls1 input[type="radio"]:checked {
+    background-color: #333;
+}
+
+
+
+.info1{
+    width: 100%;
+    height: 90vh;
+    padding: 40px 20px;
+    color: #333;
+    position: relative;
+text-align: center;
+
+    
+}
+
+.info{
+    width: 90%;
+    height: 100%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.info h1{
+    font-size: 2.4rem;
+    margin-bottom: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Espaçamento das letras para um toque sofisticado */
+}
+
+
+
+#info p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 200px;
+    font-family: 'Georgia', serif;
+    color: #555; /* Texto em tom mais suave */
+    letter-spacing: 2px;
+}
+
+
+#info .btn {
+    background-color: #c49a6c;
+    padding: 20px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+transition: background-color 100ms all;
+}
+
+#info .btn:hover {
+    background-color: #a87d50; /* Cor ao passar o mouse */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 20px;
+        display: none;
+        animation: slideDown 0.4s ease-in-out;
+    }
+
+    .menu ul.active {
+        display: flex;
+    }
+
+    .icon-menu {
+        cursor: pointer;
+    }
+}
+
+/* Animations */
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+ 
